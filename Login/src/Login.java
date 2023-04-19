@@ -12,14 +12,25 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.Set;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 
 public class Login {
 
 	private JFrame frame;
-	private JTextField txtUsername;
 	private JTextField txtPassword;
+	private JPanel panel;
+	private JPanel panel_1;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JLabel lblIcono;
+	private JLabel lblIcono_1;
+	private JLabel lblIcono3;
+	private JTextField txtUsername;
+	private JButton btnNewButton;
+	private JLabel lblIcono4;
+	private JLabel lblIcono4_1;
 
 	/**
 	 * Launch the application.
@@ -53,18 +64,18 @@ public class Login {
 		frame.getContentPane().setBackground(new Color(23, 22, 123));
 		frame.getContentPane().setLayout(null);
 		
-		JPanel panel = new JPanel();
+		panel = new JPanel();
 		panel.setBackground(new Color(63, 108, 191));
 		panel.setBounds(12, 12, 454, 410);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(0, 42, 454, 398);
 		lblNewLabel.setIcon(new ImageIcon(Login.class.getResource("/fondo/golf.jpg")));
 		panel.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("GREEN Gestion de Campo");
+		lblNewLabel_1 = new JLabel("GREEN Gestion de Campo");
 		lblNewLabel_1.setBounds(12, 12, 287, 36);
 		lblNewLabel_1.setForeground(new Color(153, 193, 241));
 		lblNewLabel_1.setFont(new Font("Dialog", Font.BOLD, 22));
@@ -81,7 +92,7 @@ public class Login {
 		lblNewLabel_2.setIcon(new ImageIcon(Login.class.getResource("/fondo/java.png")));
 		Image img = new ImageIcon(Login.class.getResource("/fondo/java.png")).getImage();
 		ImageIcon icon = new ImageIcon(img.getScaledInstance(50, 50, Image.SCALE_SMOOTH));
-		JLabel lblIcono = new JLabel(icon);
+		lblIcono = new JLabel(icon);
 		lblIcono.setBounds(316, 0, 60, 52);
 		panel.add(lblIcono);
 		
@@ -89,7 +100,7 @@ public class Login {
 		lblNewLabel_3.setIcon(new ImageIcon(Login.class.getResource("/fondo/golfclup.png")));
 		Image img2 = new ImageIcon(Login.class.getResource("/fondo/golfclup.png")).getImage();
 		ImageIcon icon2 = new ImageIcon(img2.getScaledInstance(50, 50, Image.SCALE_SMOOTH));
-		JLabel lblIcono_1 = new JLabel(icon2);
+		lblIcono_1 = new JLabel(icon2);
 		lblIcono_1.setBounds(376, 0, 78, 64);
 		panel.add(lblIcono_1);
 
@@ -100,7 +111,7 @@ public class Login {
 		// panel.add(lblNewLabel_3);
 		
 		
-		JPanel panel_1 = new JPanel();
+		panel_1 = new JPanel();
 		panel_1.setBackground(new Color(63, 108, 191));
 		panel_1.setBounds(478, 12, 379, 410);
 		frame.getContentPane().add(panel_1);
@@ -110,7 +121,7 @@ public class Login {
 		lblNewLabel_4.setIcon(new ImageIcon(Login.class.getResource("/fondo/logogolflogin.png")));
 		Image img3 = new ImageIcon(Login.class.getResource("/fondo/logogolflogin.png")).getImage();
 		ImageIcon icon3 = new ImageIcon(img3.getScaledInstance(120, 100, Image.SCALE_SMOOTH));
-		JLabel lblIcono3 = new JLabel(icon3);
+		lblIcono3 = new JLabel(icon3);
 		lblIcono3.setBounds(110, 44, 171, 124);
 		panel_1.add(lblIcono3);
 		
@@ -128,7 +139,7 @@ public class Login {
 		txtPassword.setBounds(104, 269, 177, 29);
 		panel_1.add(txtPassword);
 		
-		JButton btnNewButton = new JButton("Login");
+		btnNewButton = new JButton("Login");
 		btnNewButton.setBackground(new Color(26, 95, 180));
 		btnNewButton.setForeground(new Color(153, 193, 241));
 		btnNewButton.setFont(new Font("Dialog", Font.BOLD, 17));
@@ -139,16 +150,16 @@ public class Login {
 		lblNewLabel_5.setIcon(new ImageIcon(Login.class.getResource("/fondo/userlogin.png")));
 		Image img4 = new ImageIcon(Login.class.getResource("/fondo/userlogin.png")).getImage();
 		ImageIcon icon4 = new ImageIcon(img4.getScaledInstance(40, 40, Image.SCALE_SMOOTH));
-		JLabel lblIcono4 = new JLabel(icon4);
+		lblIcono4 = new JLabel(icon4);
 		lblIcono4.setBounds(50, 210, 45, 46);
 		panel_1.add(lblIcono4);
 		
-		JLabel lblIcono4_1 = new JLabel(new ImageIcon(Login.class.getResource("/fondo/pass.png")));
+		lblIcono4_1 = new JLabel(new ImageIcon(Login.class.getResource("/fondo/pass.png")));
 		lblIcono4_1.setBounds(50, 257, 45, 46);
 		panel_1.add(lblIcono4_1);
 		frame.setBounds(100, 100, 869, 461);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+		setVisible(true);
 
 	}
 }
